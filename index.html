@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+  <head>
+    <title>Self introduction</title>
+  </head>
+  <body>
+    <h1> Self introduction </h1>
+    <h2> <a href="menu.html">메뉴 </a></h2>
+    <ol>
+      <li> <a onclick="
+            fetch('major').then(function(response){
+                response.text().then(function(text){
+                    document.querySelector('article').innerHTML = text;
+                })
+            })
+        "> 전공 </li>
+      <li> <a onclick="
+            fetch('hobby').then(function(response){
+                response.text().then(function(text){
+                    document.querySelector('article').innerHTML = text;
+                })
+            })
+        "> 취미 </li>
+      <li> <a onclick="
+            fetch('goal').then(function(response){
+                response.text().then(function(text){
+                    document.querySelector('article').innerHTML = text;
+                })
+            })
+        "> 목표 </li>
+    </ol>
+    <article>
+    </article>
+  </body>
+</html>
